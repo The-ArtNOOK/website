@@ -1351,7 +1351,7 @@ input, select, textarea {
     overflow: hidden;
     width: 100%;
     max-width: 25rem; /* Narrower since it's single column */
-}}
+}
 
 #header nav ul li {
     border-top: solid 1px #ffffff;
