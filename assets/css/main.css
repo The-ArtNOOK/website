@@ -1341,8 +1341,8 @@ input, select, textarea {
 
 		#header nav ul {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two equal columns */
-    grid-template-rows: repeat(3, 3rem); /* Three rows of 3rem each */
+    grid-template-columns: 1fr; /* Single column */
+    grid-template-rows: repeat(7, 3rem); /* Seven rows for all 7 items */
     margin-bottom: 0;
     list-style: none;
     padding-left: 0;
@@ -1350,12 +1350,16 @@ input, select, textarea {
     border-radius: 4px;
     overflow: hidden;
     width: 100%;
-    max-width: 40rem;
-}
+    max-width: 25rem; /* Narrower since it's single column */
+}}
 
 #header nav ul li {
     border-top: solid 1px #ffffff;
-    border-right: solid 1px #ffffff;
+    border-right: 0; /* Remove all right borders */
+}
+
+#header nav ul li:first-child {
+    border-top: 0; /* Remove top border from first item only */
 }
 
 #header nav ul li:nth-child(1),
